@@ -1,0 +1,40 @@
+.coordinates {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    font-size: 16px;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
+    background-color: #ffffff;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    color: #1e293b;
+}
+
+.coordinates > * {
+    padding: 8px 16px;
+}
+
+.hit_message {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.hit_message > * {
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.hit_message_yes {
+    color: #065f46;
+    background-color: #d1fae5;
+    font-size: 16px;
+}
+
+.hit_message_no {
+    color: #991b1b;
+    background-color: #fee2e2;
+    font-size: 16px;
+}

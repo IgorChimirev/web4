@@ -1,0 +1,231 @@
+.login_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 40px 20px;
+    background-color: #f8fafc;
+}
+
+.login_card {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 420px;
+    border: 1px solid #e2e8f0;
+}
+
+.login_header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 8px;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #64748b;
+    font-weight: 400;
+}
+
+.login_form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input_group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input_field {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    background: white;
+    color: #334155;
+}
+
+.input_field:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+}
+
+.input_field:disabled {
+    background-color: #f7fafc;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.button_group {
+    display: flex;
+    gap: 12px;
+    margin-top: 8px;
+    flex-wrap: wrap;
+}
+
+.login_button {
+    flex: 1;
+    min-width: 120px;
+    background: #3b82f6 !important;
+    border: none !important;
+    padding: 12px 16px !important;
+    font-weight: 500 !important;
+    border-radius: 8px !important;
+    transition: all 0.2s ease-in-out !important;
+    color: white !important;
+    font-size: 14px !important;
+}
+
+.login_button:hover {
+    background: #2563eb !important;
+    transform: translateY(-1px);
+}
+
+.register_button {
+    flex: 1;
+    min-width: 140px;
+    background: #64748b !important;
+    border: none !important;
+    padding: 12px 16px !important;
+    font-weight: 500 !important;
+    border-radius: 8px !important;
+    transition: all 0.2s ease-in-out !important;
+    color: white !important;
+    font-size: 14px !important;
+}
+
+.register_button:hover {
+    background: #475569 !important;
+    transform: translateY(-1px);
+}
+
+.disabled_button {
+    flex: 1;
+    min-width: 120px;
+    background: #cbd5e1 !important;
+    border: none !important;
+    padding: 12px 16px !important;
+    font-weight: 500 !important;
+    border-radius: 8px !important;
+    cursor: not-allowed !important;
+    color: #64748b !important;
+    font-size: 14px !important;
+}
+
+.message_error {
+    background: #fef2f2;
+    color: #dc2626;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 1px solid #fecaca;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.message_success {
+    background: #f0fdf4;
+    color: #16a34a;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 1px solid #bbf7d0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.login_footer {
+    margin-top: 24px;
+    text-align: center;
+}
+
+.footer_text {
+    font-size: 12px;
+    color: #94a3b8;
+    line-height: 1.4;
+}
+
+.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.spinner {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #e2e8f0;
+    border-left: 2px solid #3b82f6;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Адаптивность */
+@media (max-width: 480px) {
+    .login_container {
+        padding: 20px 16px;
+    }
+
+    .login_card {
+        padding: 24px 20px;
+    }
+
+    .button_group {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .login_button,
+    .register_button,
+    .disabled_button {
+        min-width: 100%;
+        width: 100%;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 360px) {
+    .login_container {
+        padding: 16px 12px;
+    }
+
+    .login_card {
+        padding: 20px 16px;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    .login_button,
+    .register_button,
+    .disabled_button {
+        padding: 10px 14px !important;
+        font-size: 13px !important;
+    }
+}

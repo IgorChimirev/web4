@@ -1,0 +1,129 @@
+
+.scoresTable {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.scoresTable h3 {
+    margin: 0 0 15px 0;
+    color: #1e293b;
+    text-align: center;
+    font-size: 18px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+.table th {
+    background: #f8fafc;
+    padding: 12px 8px;
+    text-align: left;
+    font-weight: 600;
+    color: #475569;
+    border-bottom: 2px solid #e2e8f0;
+    font-size: 14px;
+}
+
+.table td {
+    padding: 10px 8px;
+    border-bottom: 1px solid #f1f5f9;
+    color: #334155;
+    font-size: 14px;
+}
+
+.table tr:last-child td {
+    border-bottom: none;
+}
+
+.table tr:hover {
+    background: #f8fafc;
+}
+
+.topThree {
+    background: #f0f9ff !important;
+}
+
+.rank {
+    font-weight: 600;
+    color: #3b82f6;
+    width: 40px;
+}
+
+.player {
+    font-weight: 500;
+}
+
+.score {
+    font-weight: 600;
+    color: #16a34a;
+    width: 80px;
+}
+
+.level {
+    width: 60px;
+    text-align: center;
+}
+
+.date {
+    color: #64748b;
+    font-size: 12px;
+    width: 140px;
+}
+
+.noScores {
+    text-align: center;
+    color: #64748b;
+    padding: 20px;
+    margin: 0;
+}
+
+.loading, .error {
+    text-align: center;
+    padding: 20px;
+    color: #64748b;
+}
+
+.error {
+    color: #dc2626;
+}
+
+.refreshButton {
+    width: 100%;
+    padding: 8px 16px;
+    background: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.2s;
+}
+
+.refreshButton:hover {
+    background: #2563eb;
+}
+
+@media (max-width: 768px) {
+    .scoresTable {
+        padding: 15px;
+    }
+
+    .table {
+        font-size: 12px;
+    }
+
+    .table th,
+    .table td {
+        padding: 8px 4px;
+    }
+
+    .date {
+        display: none;
+    }
+}

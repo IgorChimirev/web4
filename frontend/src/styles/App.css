@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8fafc;
+    min-height: 100vh;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+.main_container {
+    min-width: 500px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.navbar {
+    height: 60px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 0 20px;
+    background: #ffffff;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.navbar > * {
+    width: fit-content;
+    display: block;
+}
+
+/* Обновленные стили для кнопок */
+.my_button {
+    border: none !important;
+    border-radius: 8px !important;
+    padding: 10px 20px !important;
+    font-weight: 500 !important;
+    transition: all 0.2s ease-in-out !important;
+    background: #64748b !important;
+}
+
+.my_button:hover {
+    background: #475569 !important;
+    transform: translateY(-1px) !important;
+}
+
+.my_button:active {
+    transform: translateY(0) !important;
+}

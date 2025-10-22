@@ -1,0 +1,58 @@
+.form__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 16px;
+}
+
+.form_input__wrapper {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.form_input_name {
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+    font-weight: 600;
+    color: #1e293b;
+    min-width: 40px;
+}
+
+.form_input_buttons__wrapper {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.form_input_buttons__wrapper > * {
+    flex: 1;
+}
+
+.form_input_submit__wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    gap: 16px;
+    margin-top: 8px;
+}
+
+/* Стили для InputNumber */
+.p-inputnumber {
+    width: 100% !important;
+}
+
+.p-inputnumber-input {
+    width: 100% !important;
+    padding: 10px !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 8px !important;
+}
